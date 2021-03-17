@@ -1,0 +1,14 @@
+{{#each cats}}
+
+<div>
+<h3>{{this.name}}</h3>
+
+<img src="{{this.img}}" alt="">
+
+<form action="/delete-cat/{{this.id}}" method="POST">
+    <button>Delete</button>
+</form>
+
+</div>
+
+{{/each}}

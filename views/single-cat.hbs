@@ -1,0 +1,16 @@
+<h2>Cat Details Page</h2>
+<a href="/cats">Back</a>
+
+
+<h4>{{theCat.name}}</h4>
+
+
+<div>
+    <img src="{{theCat.img}}">
+</div>
+
+<a href="/cats/{{theCat.id}}/edit">Edit This Cat</a>
+
+<form action="/delete-cat/{{theCat.id}}" method="POST">
+    <button>Delete</button>
+</form>
